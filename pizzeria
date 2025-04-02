@@ -51,11 +51,10 @@ int main ()
                             break;
 
                         case 6:
-                            cout << "Capisco bro" << endl;
+                            cout << "Capo, io capire te!" << endl;
                             break;
 
                 }
-                    cout << "Costo della singola pizza: " << singolo << " euro"<< endl;
                     totale += singolo;
                     cout << "Totale finora: " << totale << " euro"<< endl;
                     cout << "Capo, voli ordinare altro? (S/N)" << endl;
@@ -65,11 +64,10 @@ int main ()
         case 2:
             cout << "Che bibita voli?" << endl;
             cout << "1. Bibite del gruppo Coca-Cola (Coca-Cola, Sprite, Fanta ecc.)- 2 euro" << endl;
-            cout << "2. Fanta - 2 euro" << endl;
-            cout << "3. Prime energy drink - 3.50 euro" << endl;
-            cout << "4. Monster - 3 euro" << endl;
-            cout << "5. Acqua - 1,50 euro" << endl;
-            cout << "6. Io non avere sete (uscita dal menu')" << endl;
+            cout << "2. Prime energy drink - 3.50 euro" << endl;
+            cout << "3. Monster - 3 euro" << endl;
+            cout << "4. Acqua - 1,50 euro" << endl;
+            cout << "5. Io non avere sete (uscita dal menu')" << endl;
             cin >> sceltacibo;
 
             switch (sceltacibo)
@@ -79,27 +77,22 @@ int main ()
                             break;
 
                         case 2:
-                            singolo = 2;
-                            break;
-
-                        case 3:
                             singolo = 3.5;
                             break;
 
-                        case 4:
+                        case 3:
                             singolo = 3;
                             break;
 
-                        case 5:
+                        case 4:
                             singolo = 1.5;
                             break;
 
-                        case 6:
-                            cout << "Capisco bro" << endl;
+                        case 5:
+                            cout << "Capo, io capire te!" << endl;
                             break;
 
                 }
-                    cout << "Costo della singola bibita: " << singolo << " euro"<< endl;
                     totale += singolo;
                     cout << "Totale finora: " << totale << " euro"<< endl;
                     cout << "Capo, voli ordinare altro? (S/N)" << endl;
@@ -129,11 +122,10 @@ int main ()
                             break;
 
                         case 4:
-                            cout << "Capisco bro" << endl;
+                            cout << "Capo, io capire te!" << endl;
                             break;
 
                 }
-                    cout << "Costo del singolo accompagnamento: " << singolo << " euro"<< endl;
                     totale += singolo;
                     cout << "Totale finora: " << totale << " euro"<< endl;
                     cout << "Capo, voli ordinare altro? (S/N)" << endl;
