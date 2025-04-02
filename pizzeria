@@ -55,16 +55,16 @@ int main ()
                             break;
 
                 }
-                    cout << "Costo della singola pizza: " << singolo << endl;
+                    cout << "Costo della singola pizza: " << singolo << " euro"<< endl;
                     totale += singolo;
-                    cout << "Totale finora: " << totale << endl;
+                    cout << "Totale finora: " << totale << " euro"<< endl;
                     cout << "Capo, voli ordinare altro? (S/N)" << endl;
                     cin >> risposta;
                     break;
 
         case 2:
             cout << "Che bibita voli?" << endl;
-            cout << "1. Bibite del gruppo Coca-Cola (Coca-cola, Sprite, Fanta ecc.)- 2 euro" << endl;
+            cout << "1. Bibite del gruppo Coca-Cola (Coca-Cola, Sprite, Fanta ecc.)- 2 euro" << endl;
             cout << "2. Fanta - 2 euro" << endl;
             cout << "3. Prime energy drink - 3.50 euro" << endl;
             cout << "4. Monster - 3 euro" << endl;
@@ -99,9 +99,9 @@ int main ()
                             break;
 
                 }
-                    cout << "Costo della singola bibita: " << singolo << endl;
+                    cout << "Costo della singola bibita: " << singolo << " euro"<< endl;
                     totale += singolo;
-                    cout << "Totale finora: " << totale << endl;
+                    cout << "Totale finora: " << totale << " euro"<< endl;
                     cout << "Capo, voli ordinare altro? (S/N)" << endl;
                     cin >> risposta;
                     break;
@@ -133,9 +133,9 @@ int main ()
                             break;
 
                 }
-                    cout << "Costo del singolo accompagnamento: " << singolo << endl;
+                    cout << "Costo del singolo accompagnamento: " << singolo << " euro"<< endl;
                     totale += singolo;
-                    cout << "Totale finora: " << totale << endl;
+                    cout << "Totale finora: " << totale << " euro"<< endl;
                     cout << "Capo, voli ordinare altro? (S/N)" << endl;
                     cin >> risposta;
                     break;
