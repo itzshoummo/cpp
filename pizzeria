@@ -1,0 +1,149 @@
+/*Crea un menu pizzeria e calcola il totale di una ordinazione,
+poter ripetere l’inserimento.*/
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int scelta, sceltacibo;
+    float totale, singolo;
+    char risposta;
+
+    do
+    {
+        cout << "Bisseria Grande Piramidu d'Ejittu. Cosa voli?" << endl;
+        cout << "1. Bissa" << endl;
+        cout << "2. Bibita" << endl;
+        cout << "3. Batatine e altri accompagnamenti vari" << endl;
+        cin >> scelta;
+        switch (scelta)
+        {
+        case 1:
+            cout << "Che bissa voli?" << endl;
+            cout << "1. Bissa bollub - 5 euro" << endl;
+            cout << "2. Bissa besci - 6 euro" << endl;
+            cout << "3. Bissa della casa - 6.50 euro" << endl;
+            cout << "4. Bissa totto - 7.5 euro" << endl;
+            cout << "5. Bissa salami (anche beccanti) - 7 euro" << endl;
+            cout << "6. Io non avere fame (uscita dal menu')" << endl;
+            cin >> sceltacibo;
+
+            switch (sceltacibo)
+                    {
+                        case 1:
+                            singolo = 5;
+                            break;
+
+                        case 2:
+                            singolo = 6;
+                            break;
+
+                        case 3:
+                            singolo = 6.5;
+                            break;
+
+                        case 4:
+                            singolo = 7.5;
+                            break;
+
+                        case 5:
+                            singolo = 7;
+                            break;
+
+                        case 6:
+                            cout << "Capisco bro" << endl;
+                            break;
+
+                }
+                    cout << "Costo della singola pizza: " << singolo << endl;
+                    totale += singolo;
+                    cout << "Totale finora: " << totale << endl;
+                    cout << "Capo, voli ordinare altro? (S/N)" << endl;
+                    cin >> risposta;
+                    break;
+
+        case 2:
+            cout << "Che bibita voli?" << endl;
+            cout << "1. Bibite del gruppo Coca-Cola (Coca-cola, Sprite, Fanta ecc.)- 2 euro" << endl;
+            cout << "2. Fanta - 2 euro" << endl;
+            cout << "3. Prime energy drink - 3.50 euro" << endl;
+            cout << "4. Monster - 3 euro" << endl;
+            cout << "5. Acqua - 1,50 euro" << endl;
+            cout << "6. Io non avere sete (uscita dal menu')" << endl;
+            cin >> sceltacibo;
+
+            switch (sceltacibo)
+                    {
+                        case 1:
+                            singolo = 2;
+                            break;
+
+                        case 2:
+                            singolo = 2;
+                            break;
+
+                        case 3:
+                            singolo = 3.5;
+                            break;
+
+                        case 4:
+                            singolo = 3;
+                            break;
+
+                        case 5:
+                            singolo = 1.5;
+                            break;
+
+                        case 6:
+                            cout << "Capisco bro" << endl;
+                            break;
+
+                }
+                    cout << "Costo della singola bibita: " << singolo << endl;
+                    totale += singolo;
+                    cout << "Totale finora: " << totale << endl;
+                    cout << "Capo, voli ordinare altro? (S/N)" << endl;
+                    cin >> risposta;
+                    break;
+
+        case 3:
+            cout << "Che accompagnamento voli?" << endl;
+            cout << "1. Anelli di cipolla - 3 euro" << endl;
+            cout << "2. Arancino - 2.5 euro" << endl;
+            cout << "3. Crocchette di patate - 3 euro" << endl;
+            cout << "4. Io non avere fame (uscita dal menu')" << endl;
+            cin >> sceltacibo;
+
+            switch (sceltacibo)
+                    {
+                        case 1:
+                            singolo = 3;
+                            break;
+
+                        case 2:
+                            singolo = 2.5;
+                            break;
+
+                        case 3:
+                            singolo = 3;
+                            break;
+
+                        case 4:
+                            cout << "Capisco bro" << endl;
+                            break;
+
+                }
+                    cout << "Costo del singolo accompagnamento: " << singolo << endl;
+                    totale += singolo;
+                    cout << "Totale finora: " << totale << endl;
+                    cout << "Capo, voli ordinare altro? (S/N)" << endl;
+                    cin >> risposta;
+                    break;
+    }
+
+        } while (risposta == 's'|| risposta == 'S');
+
+
+    system ("PAUSE");
+    return 0;
+}
