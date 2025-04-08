@@ -1,0 +1,32 @@
+/*Scrivi un programma che legga N numeri interi, conti i numeri pari e ne calcoli la
+somma.*/
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int n, num, pari=0, somma=0, i = 0;
+
+    cout << "Inserisci il numero di numeri " << endl;
+    cin >> n;
+
+    while (i < n)
+    {
+        cout << "Inserisci il numero" << endl;
+        cin>>num;
+
+        if (num % 2 == 0)
+        {
+            pari++;
+            somma+=num;
+        }
+
+        i++;
+    }
+
+    cout << "Quantita' di numeri pari: " << pari << endl;
+    cout << "Somma dei numeri pari: " << somma << endl;
+
+    system ("PAUSE");
+    return 0;
+}
